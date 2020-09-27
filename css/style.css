@@ -208,6 +208,11 @@ p {
     text-transform: uppercase;
 }
 
+.main-trend__title-link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 .block1 {
     background-image: url(../img/trend/trend1.jpg);
     background-position: center 100%;
@@ -771,10 +776,37 @@ footer {
     color: #999999;
 }
 
+.burger-menu {
+    display: none;
+}
+
 
 @media (min-width: 768px) and (max-width: 1200px) and (orientation: landscape) {
-    nav {
-        display: none;
+
+    .head {
+        background-image: url(../img/banner/banner-bg-tablet.jpg);
+        padding-bottom: 120px;
+    }
+
+    .head::after {
+        opacity: 0.6;
+    }
+
+    .header {
+        max-width: 700px;
+    }
+
+    .header-top {
+        align-items: stretch;
+    }
+
+    .header-logo {
+        width: 22.85%;
+        max-width: 23%;
+    }
+
+    .header-title {
+        width: 90%;
     }
 
     .header-title-text {
@@ -844,5 +876,84 @@ footer {
     }
 
 
+    div.action {
+        display: flex;
+        position: absolute;
+        top: 45px;
+        right: 50px;
+    }
+
+    div.action::after {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background-color: white;
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    div.action::before {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background-color: white;
+        transform: rotate(-45deg);
+        bottom: -2px;
+    }
+
+
+    .burger-menu {
+        display: flex;
+        position: absolute;
+        top: 45px;
+        right: 50px;
+
+
+    }
+
+    .burger-menu::after {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background-color: white;
+        top: 10px;
+    }
+
+    .burger-menu::before {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background-color: white;
+        bottom: 10px;
+    }
+
+    .burger-menu__span {
+        width: 30px;
+        height: 2px;
+        background-color: white;
+        position: absolute;
+    }
+
+    .nav {
+        display: none;
+        justify-content: flex-end;
+        margin-right: 56px;
+    }
+
+    .header-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-nav-item {
+        margin-bottom: 10px;
+    }
+
 
 }
+
+@media (max-width: 767px) {}
