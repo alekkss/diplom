@@ -607,7 +607,7 @@ p {
 
 .main-products__image {
     margin-bottom: 25px;
-    width: 280px;
+    width: 100%;
 
 }
 
