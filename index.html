@@ -103,7 +103,6 @@
             </div>
 
         </div>
-
         <div class="main-top">
             <main class="main-content">
                 <div class="main-content-post">
@@ -445,7 +444,12 @@
             <div class="main-products__wrapper">
                 <div class="main-products__block product1">
                     <div class="main-products__conteiner">
-                        <img class="main-products__image" src="img/products/shop-item-desk1.jpg" alt="">
+                        <picture>
+                            <source media="(min-width: 1201px)" srcset="img/products/shop-item-desk1.jpg">
+                            <source media="(min-width: 641px)" srcset="img/products/table/shop-item-tablet1.jpg">
+                            <source media="(max-width: 640px)" srcset="img/products/mobil/shop-item-mobile1.jpg">
+                            <img class="main-products__image" src="img/products/shop-item-desk1.jpg" alt="">
+                        </picture>
                     </div>
                     <div class="main-products__border">
                         <div class="main-products__conteiner">
@@ -470,7 +474,12 @@
                 </div>
                 <div class="main-products__block product2">
                     <div class="main-products__conteiner">
-                        <img class="main-products__image" src="img/products/shop-item-desk2.jpg" alt="">
+                        <picture>
+                            <source media="(min-width: 1201px)" srcset="img/products/shop-item-desk2.jpg">
+                            <source media="(min-width: 641px)" srcset="img/products/table/shop-item-tablet2.jpg">
+                            <source media="(max-width: 640px)" srcset="img/products/mobil/shop-item-mobilet2.jpg">
+                            <img class="main-products__image" src="img/products/shop-item-desk2.jpg" alt="">
+                        </picture>
                     </div>
                     <div class="main-products__border">
                         <div class="main-products__conteiner">
@@ -498,7 +507,12 @@
                 </div>
                 <div class="main-products__block product3">
                     <div class="main-products__conteiner">
-                        <img class="main-products__image" src="img/products/shop-item-desk3.jpg" alt="">
+                        <picture>
+                            <source media="(min-width: 1201px)" srcset="img/products/shop-item-desk3.jpg">
+                            <source media="(min-width: 641px)" srcset="img/products/table/shop-item-tablet3.jpg">
+                            <source media="(max-width: 640px)" srcset="img/products/mobil/shop-item-mobilet3.jpg">
+                            <img class="main-products__image" src="img/products/shop-item-desk3.jpg" alt="">
+                        </picture>
                     </div>
                     <div class="main-products__border">
                         <div class="main-products__conteiner">
@@ -563,6 +577,35 @@
             </section>
         </div>
     </footer>
+    <div class="feedback">
+        <div class="close"></div>
+        <div class="content">
+            <div class="feedback__title">
+                <h2 class="feedback__title-text">Ваш Фидбек</h2>
+            </div>
+            <form class="feedback-form">
+                <label for="feedback">Как часто вы заходите на сайт?</label>
+                <input class="feedback-form__input" id="feedback" list="day" placeholder="Почти каждый день">
+                <datalist id="day">
+                    <option>Почти каждый день</option>
+                    <option>Каждый день</option>
+                    <option>Впервые</option>
+                    <option>Раз в неделю</option>
+                    <option>Раз в месяц</option>
+                </datalist>
+                <label for="feedback2">Вы подписанны на email рассылку?</label>
+                <label class="feedback-form__radio">
+                    <input id="radio" name="option" type="radio"> <label for="radio">Да</label>
+                    <input id="radio1" name="option" type="radio"> <label for="radio1">Нет</label>
+                </label>
+                <label for="feedback2">Как часто вы заходите на сайт?</label>
+                <textarea class="feedback-form__textarea" id="feedback2" cols="30" rows="10"
+                    placeholder="Может, больше рецептов?"></textarea>
+                <button class="feedback-form__button">Отправить</button>
+            </form>
+        </div>
+
+    </div>
 </body>
 
 </html>
