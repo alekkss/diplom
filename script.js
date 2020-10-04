@@ -15,15 +15,15 @@ let funBurgerMenu = obj.burgerMenu.addEventListener('click', function () {
         obj.burgerMenu.classList.remove('action');
         obj.title.classList.remove('marginOff');
         obj.logo.classList.remove('displayOff');
-        obj.title.style.margin = 'auto';
+        obj.title.classList.remove('marginAuto');
         obj.span.style.display = 'flex';
         obj.nav.style.display = 'none';
     } else {
         obj.title.classList.add('marginOff');
+        obj.title.classList.add('marginAuto');
         obj.logo.classList.add('displayOff');
         obj.burgerMenu.classList.add('action');
         obj.nav.style.display = 'flex';
-        obj.title.style.margin = '100px auto 0';
     }
 });
 obj.close.addEventListener('click', function () {

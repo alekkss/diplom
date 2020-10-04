@@ -1121,6 +1121,10 @@ footer {
         margin: auto;
     }
 
+    .marginAuto {
+        margin: 100px auto 0;
+    }
+
     .header-title-text {
         font-size: 1.625rem;
         line-height: 36px;
