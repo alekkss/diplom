@@ -1089,6 +1089,10 @@ footer {
         z-index: 667;
     }
 
+    div.marginOff {
+        margin: 0;
+    }
+
 
 }
 
@@ -1106,6 +1110,10 @@ footer {
 
     .head::after {
         opacity: 0.6;
+    }
+
+    .header-top {
+        justify-content: flex-end;
     }
 
     .header-title {
@@ -1277,7 +1285,8 @@ footer {
     }
 
     .header-nav {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         align-items: flex-start;
     }
 
@@ -1293,5 +1302,9 @@ footer {
         top: 50%;
         margin-top: -250px;
         z-index: 667;
+    }
+
+    .displayOff {
+        display: none;
     }
 }
